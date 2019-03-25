@@ -39,4 +39,8 @@ for line in datafile:
 print("Total registered", totalRegistered)
 print("Total voted", totalVoted)
 
-print(output)
+o = open("precinctdata.csv", "w")
+o.write(output)
+o.close()
+
+datafile.close()
